@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    text-align: center;
+    background-color: #FFBE98;
+    font-family: fonte1;
+    overflow-x: hidden;
+}
+
+nav img {
+    width: 150px;
+}
+
+header {
+    padding: 2px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav button {
+    box-shadow: 2px 2px 2px 2px #d3d3d3;
+    font-family: fonte1;
+    color: #277348;
+    cursor: pointer;
+    width: 10em;
+    border: #F2F2F2;
+    border-radius: 10px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+}
+
+
+button:hover {
+    text-decoration: overline;
+    color: #D94E41;
+}
+
+.svg-container {
+    margin-top: 3em;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* CAPA/SOBRE MIM------------------------------------------------------------------- */
+h1 {
+    color: #277348;
+    text-align: center;
+    margin-top: 10px;
+}
+
+hr {
+    font-weight: 100;
+    color: black;
+    width: 100em;
+}
+
+.capa {
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    background-color: transparent;
+}
+
+.perfil {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.perfil img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.perfil p {
+    margin: 1em;
+    text-align: justify;
+    color: #D94E41;
+}
+
+#sobremim {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f8f9fa;
+}
+
+.capa p {
+    animation: fadeIn 4s ease-in-out;
+}
+
+/* FIM CAPA E SOBRE MIM */
+
+/* Inicio projetos */
+
+.projetos {
+    padding: 10px;
+    max-width: max-content;
+    text-align: center;
+    background-color: white;
+
+}
+
+.projetos h2 {
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    color: #277348;
+    font-family: fonte1;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.projetos h3 {
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    max-width: 200px;
+    background-color: white;
+    border: 2px solid #d94e41;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: fonte1;
+    color: #d94e41;
+
+}
+
+.project img {
+    max-width: 400px;
+    /* border-radius: 1em;  */
+    border: 2px solid #FFBE98;
+}
+
+.project {
+    border: 2px solid #FFBE98;
+    border-radius: 2em;
+    font-family: fonte1;
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.project:hover {
+    transform: translateY(-2px);
+}
+
+.project li {
+    background-color: #FFBE98;
+    border: 2px solid #FFBE98;
+    border-radius: 2em;
+}
+
+hr {
+    border: 3px;
+    border-color: #FFBE98;
+}
+
+.project p {
+    padding: 10px;
+    color:#000000;
+    text-align: justify;
+}
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #D94E41;
+    /* Cor da barra de rolagem */
+    border-radius: 5px;
+    /* Raio das bordas da barra de rolagem */
+}
+
+/* Cor do trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+    /* Cor do trilho da barra de rolagem */
+}
+
+
+
+/* Habilidades */
+
+skills-section {
+    padding: 50px 0;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: #277348;
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    text-align: center;
+    color: #277348;
+    margin-bottom: 10px;
+}
+
+.skills-section h2 {
+    padding: 3px;
+    margin-top: 1em;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Contatos */
+#contatos {
+    padding: 20px;
+    background-color: #ffff;
+}
+
+#contatos h2 {
+    color: #277348;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo contato */
+.contato-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato {
+    width: 300px;
+    margin: 0 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.contato:hover {
+    transform: translateY(-5px);
+}
+
+.contato h3 {
+    color: #d94e41;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    color: #000000;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+.icones {
+    display: flex;
+    gap: 10px;
+}
+
+.icones a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.icones a:hover {
+    background-color: #277348;
+}
+
+.icones img {
+    width: 100%;
+    height: auto;
+}
+
+
+#scrollToTopBtn {
+    font-size: 1.2em;
+    width: 10em;
+    padding: 10px;
+    color: white;
+    background-color: #277348;
+    text-decoration: none;
+    border-radius: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+
+/* keyframes */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

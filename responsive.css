@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+    .perfil img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+.project img {
+    max-width: 100px;
+    /* border-radius: 1em;  */
+    border: 2px solid #FFBE98;
+}
+}
+
+
+/* Ajusta a largura dos botões no menu de navegação para telas menores */
+@media screen and (max-width: 768px) {
+    nav button {
+        width: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 414px) {
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil img {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .perfil p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    #menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .perfil {
+        text-align: center;
+    }
+}
