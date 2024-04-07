@@ -19,17 +19,71 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Dark-mode */
+.toggle-btn{
+    display: none;
+    /* none faz com que o elemento fique invisivel */
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background-color: #277348;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    /* display block fez com que aparecesse a trilha da bolinha */
+    margin-left: 90%;
+}
+
+.toggle-label::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #FFBE98;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.4s ease;
+}
+
+.toggle-btn:checked + .toggle-label{
+    background-color: #D94E41;
+}
+
+.toggle-btn:checked + .toggle-label::before{
+    transform: translateX(30px);
+    /* se movimentando 30px na horizontal */
+
+}
+
+.dark-mode{
+    background-color: #277348;
+}
+.dark-mode h1{
+    color: #000000;
+}
+
+
+
+
+
+
 nav img {
-    width: 150px;
+    width: 250px;
 }
 
 header {
     padding: 2px;
     background-color: #f8f9fa;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    position: fixed;
     width: 100%;
     top: 0;
+
+    /* background: linear-gradient(to bottom, rgba(126, 113, 113, 0) 0, rgba(170, 122, 122, 0) 50%, #f1d5d5 100%); */
 }
 
 
@@ -38,7 +92,7 @@ nav button {
     font-family: fonte1;
     color: #277348;
     cursor: pointer;
-    width: 10em;
+    width: 20em;
     border: #F2F2F2;
     border-radius: 10px;
 }
@@ -57,7 +111,7 @@ ul {
     flex-direction: row;
     text-decoration: none;
     list-style: none;
-    gap: 10px;
+    gap: 5px;
 }
 
 
@@ -66,24 +120,12 @@ button:hover {
     color: #D94E41;
 }
 
-.svg-container {
-    margin-top: 3em;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
 
 /* CAPA/SOBRE MIM------------------------------------------------------------------- */
 h1 {
     color: #277348;
     text-align: center;
     margin-top: 10px;
-}
-
-hr {
-    font-weight: 100;
-    color: black;
-    width: 100em;
 }
 
 .capa {
@@ -106,9 +148,10 @@ hr {
 }
 
 .perfil p {
+    font-family: fonte1;
     margin: 1em;
-    text-align: justify;
     color: #D94E41;
+    text-align: justify;
 }
 
 #sobremim {
@@ -130,7 +173,6 @@ hr {
     max-width: max-content;
     text-align: center;
     background-color: white;
-
 }
 
 .projetos h2 {
@@ -200,6 +242,7 @@ hr {
     color:#000000;
     text-align: justify;
 }
+
 
 /* Barra de rolagem */
 
@@ -356,7 +399,8 @@ footer {
 }
 
 
-#scrollToTopBtn {
+#scrollToTopBtn{
+    margin-left: 44%;
     font-size: 1.2em;
     width: 10em;
     padding: 10px;
@@ -379,3 +423,5 @@ footer {
         opacity: 1;
     }
 }
+
+
