@@ -90,9 +90,11 @@ header {
 nav button {
     box-shadow: 2px 2px 2px 2px #d3d3d3;
     font-family: fonte1;
+    font-size: 15pt;
     color: #277348;
     cursor: pointer;
-    width: 20em;
+    width: 5.8em;
+    margin-right: 10px;
     border: #F2F2F2;
     border-radius: 10px;
 }
@@ -111,7 +113,7 @@ ul {
     flex-direction: row;
     text-decoration: none;
     list-style: none;
-    gap: 5px;
+    gap: 10px; 
 }
 
 
@@ -205,7 +207,7 @@ h1 {
     max-width: 400px;
     /* border-radius: 1em;  */
     border: 2px solid #FFBE98;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .project {

@@ -1,19 +1,4 @@
 @media screen and (max-width: 768px) {
-    .perfil img {
-        max-width: 100%;
-    }
-
-    .perfil p {
-        width: 100%; /* Garante que o parágrafo ocupe 100% da largura do contêiner pai */
-    }
-
-    .projetos .project {
-        grid-template-columns: 1fr; /* Altera para uma coluna única */
-        justify-content: center; /* Centraliza os projetos */
-    }
-}
-
-@media screen and (max-width: 768px) {
     nav {
         flex-direction: column; /* Altera para empilhar os itens verticalmente */
         align-items: center; /* Alinha os itens ao centro */
@@ -21,5 +6,13 @@
 
     nav ul {
         margin-top: 20px; /* Adiciona margem superior para separar os itens */
+    }
+
+    nav img {
+        max-width: 200px; /* Redimensiona o logotipo para uma largura máxima */
+    }
+
+    nav button{
+        width: 1em;
     }
 }
