@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-const toggleBtn = document.getElementById('toggle-mode');
+const toggleBtn = document.getElementById('toggle');
 const body = document.body;
-// Transformei o corpo da minha page em uma var
 
-    toggleBtn.addEventListener("click", function(){
-        body.classList.toggle("dark-mode") 
-    } );
+toggleBtn.addEventListener('click', function(){
+    body.classList.toggle('dark-mode')
+    //body.classlist é para criar uma classe no corpo
+} )
