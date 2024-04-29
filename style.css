@@ -179,6 +179,9 @@ h1 {
 }
 
 .projetos p{
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 5px;
     color: #1a1a1a;
     font-family: fonte2;
     font-size: 13.5pt;
